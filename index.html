@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janken Paradise</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janken Paradise</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>ジャンケンパラダイス</h1>
-    <p>G:グー / C:チョキ / P:パー キーボードでも操作可能！！</p>
+  <h1>ジャンケンパラダイス</h1>
+  <p>G:グー / C:チョキ / P:パー キーボードでも操作可能！！</p>
 
-    <p class="contact-link">
-        お問い合わせページは<a href="contact.html" aria-label="お問い合わせページへ移動">こちら</a>
-    </p>
+  <p class="contact-link">
+    お問い合わせページは
+    <a href="contact.html" aria-label="お問い合わせページへ移動">こちら</a>
+  </p>
 
-    <div class="hands" role="group" aria-label="ジャンケンの手を選択">
-        <button class="hand" data-hand="グー" aria-label="グー">✊ グー</button>
-        <button class="hand" data-hand="チョキ" aria-label="チョキ">✌ チョキ</button>
-        <button class="hand" data-hand="パー" aria-label="パー">🖐️ パー</button>
-    </div>
+  <div class="hands" role="group" aria-label="ジャンケンの手を選択">
+    <button class="hand" data-hand="グー" aria-label="グー">✊ グー</button>
+    <button class="hand" data-hand="チョキ" aria-label="チョキ">✌ チョキ</button>
+    <button class="hand" data-hand="パー" aria-label="パー">🖐️ パー</button>
+  </div>
 
-    <div id="result" aria-live="polite"></div>
-    <div id="score"></div>
-    <div id="rank"></div>
-    <button id="retryBtn" aria-label="もう一度挑戦">もう一度挑戦</button>
+  <div id="result" aria-live="polite"></div>
+  <div id="score"></div>
+  <div id="rank"></div>
+  <button id="retryBtn" aria-label="もう一度挑戦">もう一度挑戦</button>
 
-    <div id="achievement" role="alert" aria-live="assertive">🎉 5連勝達成！すごい！ 🎉</div>
-    <div id="soundNotice" class="sound-notice" role="alert" aria-live="assertive" hidden>
+  <div id="achievement" role="alert" aria-live="assertive">🎉 5連勝達成！すごい！ 🎉</div>
+  <div
+    id="soundNotice"
+    class="sound-notice"
+    role="alert"
+    aria-live="assertive"
+    hidden
+  >
     🔈 音を有効にするには画面をタップしてください
-    </div>
+  </div>
 
-    <audio id="clickSound" src="audio/click.mp3" preload="auto"></audio>
-    <audio id="winSound" src="audio/win.mp3" preload="auto"></audio>
-    <audio id="loseSound" src="audio/lose.mp3" preload="auto"></audio>
+  <audio id="clickSound" src="audio/click.mp3" preload="auto"></audio>
+  <audio id="winSound" src="audio/win.mp3" preload="auto"></audio>
+  <audio id="loseSound" src="audio/lose.mp3" preload="auto"></audio>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 
-    <footer>
+  <footer>
     <p>© 2025 ジャンケンパラダイス | <a href="contact.html">お問い合わせ</a></p>
-    </footer>
-</body>
-</html>
+  </footer>
 </body>
 </html>
