@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JankenParadise</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>ジャンケンパラダイス</h1>
+    <h2>お問い合わせ</h2>
+    <p>ご意見・ご質問は以下のフォームからお送りください。</p>
+
+    <form action="https://formspree.io/f/あなたのフォームID" method="POST">
+    <label for="name">お名前（任意）</label><br />
+    <input type="text" id="name" name="name" placeholder="山田 太郎" /><br /><br />
+
+    <label for="email">メールアドレス（必須）</label><br />
+    <input type="email" id="email" name="_replyto" placeholder="example@mail.com" required /><br /><br />
+
+    <label for="message">お問い合わせ内容（必須）</label><br />
+    <textarea id="message" name="message" rows="6" required></textarea><br /><br />
+
+    <button type="submit">送信する</button>
+    </form>
+
+    <p><a href="index.html">ゲームに戻る</a></p>
+
+    <footer>
+    <p>© 2025 じゃんけん連勝ゲーム | <a href="contact.html">お問い合わせ</a></p>
+    </footer>
+</body>
+</html>
